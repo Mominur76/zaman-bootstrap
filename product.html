@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Boostrap Project 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../html/assests/images/shortcut-icon.png" />
+    <link rel="stylesheet" type="text/css" href="assests/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assests/css/bootstrap-reboot.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assests/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/js" src="assests/js/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <header class="py-3">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="head-logo col-md-3 col-3">
+            <a href="../html/index.html">
+              <img src="../html/assests/images/Zaman.png" alt="logo" />
+            </a>
+          </div>
+          <div class="head-search col-md-5 col-7 no-gutters">
+            <form>
+              <input
+                type="search"
+                name="search"
+                placeholder="Search for Watches..."
+              />
+              <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="head-right col-md-3 col-2">
+            <img
+              src="../html/assests/images/menu.png"
+              alt="menu"
+              class="img-fluid"
+              id="menu-view"
+            />
+            <ul>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#exampleModal"
+                  >Account</a
+                >
+              </li>
+              <li><a href="../html/cart.html">Cart</a></li>
+              <li><a href="">Wishlist</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="head-toggle-nav text-right">
+          <img
+            src="../html/assests/images/close.png"
+            alt="close"
+            class="pt-4 pr-4"
+            id="menu-close"
+          />
+          <ul>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#exampleModal"
+                >Account</a
+              >
+            </li>
+            <li><a href="../html/cart.html">Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!----------------------------------->
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">Men</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="../html/product.html">formal</a></li>
+              <li><a href="../html/product.html">festive </a></li>
+              <li><a href="../html/product.html">workwear</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Women</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="../html/product.html">formal</a></li>
+              <li><a href="../html/product.html">festive </a></li>
+              <li><a href="../html/product.html">workwear</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../html/product.html">Kids</a>
+          </li>
+          <li><a href="../html/product.html">Sports</a></li>
+          <li><a href="../html/product.html">Casual</a></li>
+          <li>
+            <a href="../html/product.html">Trending</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="../html/product.html">Sonata</a></li>
+              <li><a href="../html/product.html">Titan</a></li>
+              <li>
+                <a href="../html/product.html">others</a>
+                <!-- Second Tier Drop Down -->
+                <ul>
+                  <li><a href="../html/product.html">Fastrack</a></li>
+                  <li><a href="../html/product.html">Casio</a></li>
+                  <li>
+                    <a href="../html/product.html">Fossil</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr />
+    <!-- ____________________________________________________________________________ -->
+    <section class="all-products section-gap">
+      <div class="container">
+        <div class="row">
+          <button class="filter-btn col-6">Filter</button
+          ><button class="filter-btn col-6">Sort</button>
+        </div>
+        <div class="row">
+          <div class="col-md-3 product-filter">
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <h4>Filter By</h4>
+              </div>
+              <div class="col-sm-5 text-end">
+                <a href="#" class="text-decoration-none">Clear All</a>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Price</label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-1" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-1">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Price</label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-2" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-2">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Availability</label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-3" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-3">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Gender </label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-4" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-4">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Discounts </label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-5" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-5">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Strap Material </label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-6" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-6">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Strap Color </label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-7" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-7">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Dial Color </label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-8" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-8">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Function </label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-9" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-9">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Collection </label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-10" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-10">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Movement</label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-11" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-11">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Product Category </label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-1" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-1">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Width </label>
+              </div>
+              <div class="col-sm-7 text-right">
+                <a href="#content-12" class="accordion-toggle">+</a>
+                <div class="accordion-content" id="content-12">
+                  Content goes here...
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div class="col-md-9 col-12 products">
+            <div class="row mb-5">
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product1.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>NXT White Dial Metal Strap Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product2.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>NXT White Dial Metal Strap Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product3.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>NXT White Dial Metal Strap Watch</h5>
+                <label for="price"
+                  >2599<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product4.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>Fastrack FastFit Grey Dial Analog Unisex Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product5.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>RPM Dark Anthracite Dial Leather Strap Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product6.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>Amazfit T Rex Pro Multi Function Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product7.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>Urban Magic Blue Dial Stainless Steel Strap Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product8.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>Versatyle 2 Black Dial Stainless Steel Strap Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product9.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>Quartet Brown Dial Stainless Steel Strap Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product10.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>Fastrack Stunners 3.0 blue dial metal strap Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product2.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>NXT White Dial Metal Strap Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+              <div class="product-block col-4">
+                <a href="../html/product-detail.html"
+                  ><img
+                    src="../html/assests/images/Product3.jpg"
+                    alt="image"
+                    class="img-fluid"
+                /></a>
+                <h5>NXT White Dial Metal Strap Watch</h5>
+                <label for="price"
+                  >2149<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></label>
+
+                <span
+                  >2999<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i
+                ></span>
+              </div>
+            </div>
+            <div class="product-pagination">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a
+                    class="page-link"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Prev</a
+                  >
+                </li>
+
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ____________________________________________________________________________ -->
+    <section class="footer py-5 section-gap">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-3">
+            <h4 class="mb-4">Contact Us</h4>
+            <a href="../html/contact.html" class="footer-gap">1800-266-0123</a>
+            <a href="../html/contact.html" class="footer-gap"
+              >customercare@titan.co.in</a
+            >
+            <a href="#">Frequently Asked Questions</a>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-gap2">
+              <h4 class="mb-4">Customer service</h4>
+              <a href="#" class="footer-gap">Payment Options</a>
+              <a href="#" class="footer-gap">Track Order</a>
+              <a href="#" class="footer-gap">Find a Store</a>
+              <a href="#">Encircle Program</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="ml-3">
+              <h4 class="mb-4">Polices</h4>
+              <a href="#" class="footer-gap">Returns & Exchanges</a>
+              <a href="#" class="footer-gap">Cancellation</a>
+              <a href="#" class="footer-gap">Shipping</a>
+              <a href="#" class="footer-gap">Warranty Policies</a>
+              <a href="#" class="footer-gap">Delivery Information</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h4 class="mb-4">About</h4>
+            <a href="../html/about.html" class="footer-gap">About us</a>
+            <a href="#" class="footer-gap">Careers</a>
+            <a href="#" class="footer-gap">Terms & Condition</a>
+            <a href="#" class="footer-gap">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="ft-dowload-follow mt-4">
+          <div class="row">
+            <div class="col-md-3">
+              <h5 class="footer-gap">Download Our App</h5>
+              <a href="#"
+                ><img
+                  src="../html/assests/images/google-play-badge.png"
+                  alt="img"
+                  class="img-fluid"
+              /></a>
+              <a href="" class="d-print-inline-block"
+                ><img
+                  src="../html/assests/images/Download_on_the_App_Store_Badge.jpg"
+                  alt="img"
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-2">
+              <h5 class="footer-gap">Follow Us On</h5>
+              <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-twitter mr-2"></i></a>
+                <a href="#"><i class="fa-brands fab fa-instagram mr-2"></i></a>
+                <a href="#"
+                  ><i class="fa-brands fab fab fa-facebook-f mr-2"></i
+                ></a>
+                <a href="#"
+                  ><i class="fa-brands fab fa-linkedin-in mr-2"></i
+                ></a>
+                <a href="#"><i class="fa-brands fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-end">
+      <div class="container">
+        <p>© 2022 Zaman all rights reserved | Design by Mopple Institute</p>
+      </div>
+    </section>
+    <!-- Search Bar -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="d-flex justify-content-center h-100">
+              <div class="searchbar">
+                <input
+                  class="search_input"
+                  type="text"
+                  name=""
+                  placeholder="Search..."
+                />
+                <a href="#" class="search_icon"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Log In Pop up -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="login-wrap p-4 p-md-5">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <h3 class="text-center mb-4">Have an account?</h3>
+                <form action="#" class="login-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control rounded-left"
+                      placeholder="Username"
+                      required
+                    />
+                  </div>
+                  <div class="form-group d-flex">
+                    <input
+                      type="password"
+                      class="form-control rounded-left"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <div class="form-group d-md-flex">
+                    <div class="w-50">
+                      <label class="checkbox-wrap checkbox-primary"
+                        >Remember Me
+                        <input type="checkbox" checked />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="w-50 text-md-right">
+                      <a href="#">Forgot Password?</a>
+                    </div>
+                  </div>
+                  <div class="form-group text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-danger rounded submit p-3 px-5"
+                    >
+                      Sign Up
+                    </button>
+                    <p class="my-2">or</p>
+
+                    <p class="text-center text-secondary">
+                      Don't have an account?
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModal1"
+                        class="text-dark font-weight-bold"
+                      >
+                        Register Now</a
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Pop up -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex align-items-center">
+            <img
+              src="../html/assests/images/shortcut-icon.png"
+              alt="icon"
+              class="img-fluid mr-2"
+            />
+            <h5 class="modal-title" id="exampleModalLabel">Welcome to Zaman</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#" class="login-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control rounded-left"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="form-group d-flex">
+                <input
+                  type="email"
+                  class="form-control rounded-left"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group d-flex">
+                <input
+                  type="password"
+                  class="form-control rounded-left"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="form-group d-flex">
+                <input
+                  type="password"
+                  class="form-control rounded-left"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <div class="form-group d-md-flex">
+                <div class="w-50">
+                  <label class="checkbox-wrap checkbox-primary"
+                    >I accept <a href="">Terms & Condition</a>
+
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group text-center">
+                <button
+                  type="submit"
+                  class="btn btn-danger rounded submit p-3 px-5"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/js" src="assests/js/bootstrap.bundle.js"></script>
+    <script type="text/js" src="assests/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Listen for click on the document
+      document.addEventListener("click", function (event) {
+        //Bail if our clicked element doesn't have the class
+        if (!event.target.classList.contains("accordion-toggle")) return;
+
+        // Get the target content
+        var content = document.querySelector(event.target.hash);
+        if (!content) return;
+
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // If the content is already expanded, collapse it and quit
+        if (content.classList.contains("active")) {
+          content.classList.remove("active");
+          return;
+        }
+
+        // Get all open accordion content, loop through it, and close it
+        var accordions = document.querySelectorAll(".accordion-content.active");
+        for (var i = 0; i < accordions.length; i++) {
+          accordions[i].classList.remove("active");
+        }
+
+        // Toggle our content
+        content.classList.toggle("active");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#menu-view").click(function () {
+          $(".head-toggle-nav").addClass("nav-open");
+        });
+        $("#menu-close").click(function () {
+          $(".head-toggle-nav").removeClass("nav-open");
+        });
+      });
+    </script>
+  </body>
+</html>

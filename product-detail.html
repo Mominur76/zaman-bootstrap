@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Boostrap Project 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assests/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assests/css/zoom.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assests/css/bootstrap-reboot.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assests/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/js" src="assests/js/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <header class="py-3">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="head-logo col-md-3 col-3">
+            <a href="../html/index.html">
+              <img src="../html/assests/images/Zaman.png" alt="logo" />
+            </a>
+          </div>
+          <div class="head-search col-md-5 col-7 no-gutters">
+            <form>
+              <input
+                type="search"
+                name="search"
+                placeholder="Search for Watches..."
+              />
+              <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="head-right col-md-3 col-2">
+            <img
+              src="../html/assests/images/menu.png"
+              alt="menu"
+              class="img-fluid"
+              id="menu-view"
+            />
+            <ul>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#exampleModal"
+                  >Account</a
+                >
+              </li>
+              <li><a href="../html/cart.html">Cart</a></li>
+              <li><a href="">Wishlist</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="head-toggle-nav text-right">
+          <img
+            src="../html/assests/images/close.png"
+            alt="close"
+            class="pt-4 pr-4"
+            id="menu-close"
+          />
+          <ul>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#exampleModal"
+                >Account</a
+              >
+            </li>
+            <li><a href="../html/cart.html">Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!----------------------------------->
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">Men</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="../html/product.html">formal</a></li>
+              <li><a href="../html/product.html">festive </a></li>
+              <li><a href="../html/product.html">workwear</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Women</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="../html/product.html">formal</a></li>
+              <li><a href="../html/product.html">festive </a></li>
+              <li><a href="../html/product.html">workwear</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../html/product.html">Kids</a>
+          </li>
+          <li><a href="../html/product.html">Sports</a></li>
+          <li><a href="../html/product.html">Casual</a></li>
+          <li>
+            <a href="../html/product.html">Trending</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="../html/product.html">Sonata</a></li>
+              <li><a href="../html/product.html">Titan</a></li>
+              <li>
+                <a href="../html/product.html">others</a>
+                <!-- Second Tier Drop Down -->
+                <ul>
+                  <li><a href="../html/product.html">Fastrack</a></li>
+                  <li><a href="../html/product.html">Casio</a></li>
+                  <li>
+                    <a href="../html/product.html">Fossil</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr />
+    <!-- ______________________________Nav End__________________________________ -->
+    <section class="product-view section-gap">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-5">
+            <div class="product-view-left">
+              <div class="row no-gutters">
+                <div class="col-12 main-img">
+                  <div id="img-1" class="picture" style="display: none">
+                    <img
+                      class="img-fluid"
+                      src="../html/assests/images/Product-Detail-main.jpg"
+                      alt="Lotus"
+                    />
+                  </div>
+                  <div id="img-2" class="picture" style="display: none">
+                    <img
+                      class="img-fluid"
+                      src="../html/assests/images/Product-Detail-main2.jpg"
+                      alt="Boat"
+                    />
+                  </div>
+                  <div id="img-3" class="picture" style="display: none">
+                    <img
+                      class="img-fluid"
+                      src="../html/assests/images/Product-Detail-main3.jpg"
+                      alt="Leaves"
+                    />
+                  </div>
+                  <div id="img-4" class="picture" style="display: none">
+                    <img
+                      class="img-fluid"
+                      src="../html/assests/images/Product-Detail-main4.jpg"
+                      alt="Rocks"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-thumb d-flex mt-4">
+              <div class="product-thumb-block">
+                <a
+                  href="javascript:void(0)"
+                  class="myhover"
+                  onclick="openImg('img-1');"
+                >
+                  <img
+                    class="img-fluid"
+                    src="../html/assests/images/Product-Detail-main.jpg"
+                    alt="thumnail"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="product-thumb-block">
+                <a
+                  href="javascript:void(0)"
+                  class="myhover"
+                  onclick="openImg('img-2');"
+                >
+                  <img
+                    class="img-fluid"
+                    src="../html/assests/images/Product-Detail-main2.jpg"
+                    alt="thumnail"
+                  />
+                </a>
+              </div>
+              <div class="product-thumb-block">
+                <a
+                  href="javascript:void(0)"
+                  class="myhover"
+                  onclick="openImg('img-3');"
+                >
+                  <img
+                    class="img-fluid"
+                    src="../html/assests/images/Product-Detail-main3.jpg"
+                    alt="thumnail"
+                  />
+                </a>
+              </div>
+              <div class="product-thumb-block">
+                <a
+                  href="javascript:void(0)"
+                  class="myhover"
+                  onclick="openImg('img-4');"
+                >
+                  <img
+                    class="img-fluid"
+                    src="../html/assests/images/Product-Detail-main4.jpg"
+                    alt="thumnail"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-7 product-view-right">
+            <button class="try-btn mb-4">
+              <i class="fa-solid fas fa-camera"></i>Try it on
+            </button>
+            <h3>Titan Opulent III Blue Dial Analog Watch for Men</h3>
+            <p class="my-2">
+              MRP<i class="fa-sharp fa-solid fa-indian-rupee-sign mx-1"></i
+              >5995.00
+              <span>(Inclusive of all taxes)</span>
+            </p>
+            <i class="fa-sharp fa-solid f a-star"></i
+            ><i class="fa-sharp fa-solid fa-star"></i
+            ><i class="fa-sharp fa-solid fa-star"></i
+            ><i class="fa-sharp fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+            <h4 class="my-3">Similar Products :</h4>
+            <div class="product-variant d-flex">
+              <a href="#" class="mr-4 active">
+                <img
+                  src="../html/assests/images/varient-thumbnail.jpg"
+                  alt="img"
+                  class="img-fluid"
+                /> </a
+              ><a href="#" class="mr-4">
+                <img
+                  src="../html/assests/images/varient-thumbnail2.jpg"
+                  alt="img"
+                  class="img-fluid"
+                /> </a
+              ><a href="#" class="mr-4">
+                <img
+                  src="../html/assests/images/varient-thumbnail3.jpg"
+                  alt="img"
+                  class="img-fluid"
+                /> </a
+              ><a href="#">
+                <img
+                  src="../html/assests/images/varient-thumbnail4.jpg"
+                  alt="img"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <label class="my-3">In Stock</label>
+            <a href="../html/cart.html"
+              ><button class="mr-4">Add to cart</button></a
+            >
+            <a href="#" class="buy-btn"><button>buy now</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-product section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="tab">
+              <button
+                class="tablinks"
+                onclick="openCity(event, 'London')"
+                id="defaultOpen"
+              >
+                description
+              </button>
+              <button class="tablinks my-3" onclick="openCity(event, 'Paris')">
+                Tech specs
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                reviews
+              </button>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div id="London" class="tabcontent">
+              <p>
+                Vestibulum tellus augue, feugiat vestibulum massa nec, dapibus
+                viverra enim. Suspendisse porttitor arcu eu nisl molestie, id
+                iaculis risus volutpat. Integer id justo non risus bibendum
+                placerat. Nunc ut neque at odio lacinia tristique. Vestibulum et
+                aliquet erat. Fusce maximus gravida rutrum. Quisque congue magna
+                id eros eleifend ultrices. Fusce faucibus, odio ut lacinia
+                euismod, ante orci facilisis mi, eu posuere lectus lacus et
+                tellus. Morbi consequat justo mattis tortor iaculis finibus.
+                Curabitur magna ex, ultrices in nibh eu, tincidunt auctor lacus.
+                Aliquam non ultricies nisi.
+              </p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+              <div class="row justify-content-between">
+                <div class="col-md-5">
+                  <div class="row align-items-center">
+                    <div class="col-sm-6"><h5>COLLECTION</h5></div>
+                    <div class="col-sm-6"><p>Classique Slimline</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>WATER RESISTANCE</h5></div>
+                    <div class="col-sm-6"><p>5 ATM</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>GENDER</h5></div>
+                    <div class="col-sm-6"><p>Men</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>FUNCTION</h5></div>
+                    <div class="col-sm-6"><p>Analog with Date</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>DIAL COLOR</h5></div>
+                    <div class="col-sm-6"><p>Blue</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>CASE MATERIAL</h5></div>
+                    <div class="col-sm-6"><p>Stainless Steel</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>CASE LENGTH(6H-12H)</h5></div>
+                    <div class="col-sm-6"><p>40 mm</p></div>
+                    <hr class="mt-4" />
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="row align-items-center">
+                    <div class="col-sm-6"><h5>COLLECTION</h5></div>
+                    <div class="col-sm-6"><p>Classique Slimline</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>WATER RESISTANCE</h5></div>
+                    <div class="col-sm-6"><p>5 ATM</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>GENDER</h5></div>
+                    <div class="col-sm-6"><p>Men</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>FUNCTION</h5></div>
+                    <div class="col-sm-6"><p>Analog with Date</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>DIAL COLOR</h5></div>
+                    <div class="col-sm-6"><p>Blue</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>CASE MATERIAL</h5></div>
+                    <div class="col-sm-6"><p>Stainless Steel</p></div>
+                    <hr class="mt-4" />
+                    <div class="col-sm-6"><h5>CASE LENGTH(6H-12H)</h5></div>
+                    <div class="col-sm-6"><p>40 mm</p></div>
+                    <hr class="mt-4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+              <h3 class="text-center mb-2">
+                <i class="fa-sharp fa-solid fa-star"></i>4.5 Rating
+              </h3>
+              <p class="text-center display-block mb-3">
+                687 Ratings & 71 Reviews
+              </p>
+              <div class="text-center">
+                <button>Write a review</button>
+                <button>Ask a Question</button>
+              </div>
+              <div class="reviews mt-4 text-left">
+                <img
+                  src="../html/assests/images/review-user1.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+
+                <h5 class="mt-2">Jhon Due</h5>
+                <i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-solid fa-star-half-stroke"></i>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, iste.
+                </p>
+              </div>
+              <div class="reviews text-left mt-3">
+                <img
+                  src="../html/assests/images/review-user2.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+                <h5 class="mt-2">Mary Jain</h5>
+                <i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-sharp fa-solid fa-star"></i>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, iste.
+                </p>
+              </div>
+              <div class="reviews text-left mt-3">
+                <img
+                  src="../html/assests/images/review-user3.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+
+                <h5 class="mt-2">James Miller</h5>
+                <i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-sharp fa-solid fa-star"></i
+                ><i class="fa-solid fa-star-half-stroke"></i>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, iste.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="suggestion section-gap">
+      <div class="container">
+        <h2 class="text-center mb-4">You May Also Like</h2>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="../html/assests/images/suggest1.jpg"
+                alt="img"
+                class="img-fluid"
+            /></a>
+            <h4>Camo Multicoloured Dial Watch</h4>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="../html/assests/images/suggest2.jpg"
+                alt="img"
+                class="img-fluid"
+            /></a>
+            <h4>Regalia Opulent Black Watch</h4>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="../html/assests/images/suggest3.jpg"
+                alt="img"
+                class="img-fluid"
+            /></a>
+            <h4>Forrester Leather Strap Watch</h4>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="../html/assests/images/suggest4.jpg"
+                alt="img"
+                class="img-fluid"
+            /></a>
+            <h4>Casio ECB-30D-1A</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ____________________________________________________________________________ -->
+    <section class="footer py-5 section-gap">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-3 footer-gap3">
+            <h4 class="mb-4">Contact Us</h4>
+            <a href="../html/contact.html" class="footer-gap">1800-266-0123</a>
+            <a href="../html/contact.html" class="footer-gap"
+              >customercare@titan.co.in</a
+            >
+            <a href="#">Frequently Asked Questions</a>
+          </div>
+
+          <div class="col-md-4 footer-gap3">
+            <div class="footer-gap2">
+              <h4 class="mb-4">Customer service</h4>
+              <a href="#" class="footer-gap">Payment Options</a>
+              <a href="#" class="footer-gap">Track Order</a>
+              <a href="#" class="footer-gap">Find a Store</a>
+              <a href="#">Encircle Program</a>
+            </div>
+          </div>
+
+          <div class="col-md-3 footer-gap3">
+            <div class="ml-3">
+              <h4 class="mb-4">Polices</h4>
+              <a href="#" class="footer-gap">Returns & Exchanges</a>
+              <a href="#" class="footer-gap">Cancellation</a>
+              <a href="#" class="footer-gap">Shipping</a>
+              <a href="#" class="footer-gap">Warranty Policies</a>
+              <a href="#" class="footer-gap">Delivery Information</a>
+            </div>
+          </div>
+
+          <div class="col-md-2 footer-gap3">
+            <h4 class="mb-4">About</h4>
+            <a href="../html/about.html" class="footer-gap">About us</a>
+            <a href="#" class="footer-gap">Careers</a>
+            <a href="#" class="footer-gap">Terms & Condition</a>
+            <a href="#" class="footer-gap">Privacy Policy</a>
+          </div>
+        </div>
+        
+        <div class="ft-dowload-follow mt-4">
+          <div class="row">
+            <div class="col-md-3">
+              <h5 class="footer-gap">Download Our App</h5>
+              <a href="#"
+                ><img
+                  src="../html/assests/images/google-play-badge.png"
+                  alt="img"
+                  class="img-fluid"
+              /></a>
+              <a href="" class="d-print-inline-block"
+                ><img
+                  src="../html/assests/images/Download_on_the_App_Store_Badge.jpg"
+                  alt="img"
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-2">
+              <h5 class="footer-gap">Follow Us On</h5>
+              <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-twitter mr-2"></i></a>
+                <a href="#"><i class="fa-brands fab fa-instagram mr-2"></i></a>
+                <a href="#"
+                  ><i class="fa-brands fab fab fa-facebook-f mr-2"></i
+                ></a>
+                <a href="#"
+                  ><i class="fa-brands fab fa-linkedin-in mr-2"></i
+                ></a>
+                <a href="#"><i class="fa-brands fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-end">
+      <div class="container">
+        <p>© 2022 Zaman all rights reserved | Design by Mopple Institute</p>
+      </div>
+    </section>
+    <!-- Search Bar -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="d-flex justify-content-center h-100">
+              <div class="searchbar">
+                <input
+                  class="search_input"
+                  type="text"
+                  name=""
+                  placeholder="Search..."
+                />
+                <a href="#" class="search_icon"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Log In Pop up -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="login-wrap p-4 p-md-5">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <h3 class="text-center mb-4">Have an account?</h3>
+                <form action="#" class="login-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control rounded-left"
+                      placeholder="Username"
+                      required
+                    />
+                  </div>
+                  <div class="form-group d-flex">
+                    <input
+                      type="password"
+                      class="form-control rounded-left"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <div class="form-group d-md-flex">
+                    <div class="w-50">
+                      <label class="checkbox-wrap checkbox-primary"
+                        >Remember Me
+                        <input type="checkbox" checked />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="w-50 text-md-right">
+                      <a href="#">Forgot Password?</a>
+                    </div>
+                  </div>
+                  <div class="form-group text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-danger rounded submit p-3 px-5"
+                    >
+                      Sign Up
+                    </button>
+                    <p class="my-2">or</p>
+
+                    <p class="text-center text-secondary">
+                      Don't have an account?
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModal1"
+                        class="text-dark font-weight-bold"
+                      >
+                        Register Now</a
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign Up Pop up -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex align-items-center">
+            <img
+              src="../html/assests/images/shortcut-icon.png"
+              alt="icon"
+              class="img-fluid mr-2"
+            />
+            <h5 class="modal-title" id="exampleModalLabel">Welcome to Zaman</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#" class="login-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control rounded-left"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="form-group d-flex">
+                <input
+                  type="email"
+                  class="form-control rounded-left"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group d-flex">
+                <input
+                  type="password"
+                  class="form-control rounded-left"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="form-group d-flex">
+                <input
+                  type="password"
+                  class="form-control rounded-left"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <div class="form-group d-md-flex">
+                <div class="w-50">
+                  <label class="checkbox-wrap checkbox-primary"
+                    >I accept <a href="">Terms & Condition</a>
+
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group text-center">
+                <button
+                  type="submit"
+                  class="btn btn-danger rounded submit p-3 px-5"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/js" src="assests/js/bootstrap.bundle.js"></script>
+    <script type="text/js" src="assests/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      openImg("img-1");
+
+      function openImg(imgName) {
+        var i, x;
+        x = document.getElementsByClassName("picture");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(imgName).style.display = "block";
+      }
+    </script>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#menu-view").click(function () {
+          $(".head-toggle-nav").addClass("nav-open");
+        });
+        $("#menu-close").click(function () {
+          $(".head-toggle-nav").removeClass("nav-open");
+        });
+      });
+    </script>
+  </body>
+</html>
